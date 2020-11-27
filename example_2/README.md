@@ -19,7 +19,6 @@ significa che il job viene eseguito in seguito a una merge request o a una commi
 ```$CI_COMMIT_BRANCH =~ /^(master|production)$/```
 significa che il job viene eseguito solo in seguito a una commit sui branch master o production
 
-A che servono gli stage staging? Perchè vogliamo che le modifiche vengano testate nel modo in cui
-verrebbero rese effettive in production
+Perchè staging e production plan/apply vengono fatti in sequenza? Perchè vogliamo che le modifiche vengano prima testate nel modo in cui verrebbero rese effettive in production
 
-- manual: il job si attiva solo quando la pipeline viene triggerata a mano
+- manual: il job si attiva solo manualmente; lo stage compare nella pipeline ma non viene eseguito, deve essere l'utente a selezionarlo e cliccare su "run"
