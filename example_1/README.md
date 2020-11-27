@@ -1,5 +1,7 @@
 # gitlab-ci-template
 
+## Example 1
+
 Template per devops tramite gitlab-ci. Si tratta di una procedura per una app nodejs + database postgres.
 
 - gitlab-ci.yml: sono specificati 3 stage (test, build e deploy); test è eseguito come 2 jobs paralleli, uno usa node v10 +     caching della cartella node_modules e l'altro node v8 senza cache. Entrambi i jobs producono 2 artifacts che vengono           mantenuti da gitlab per 1 settimana.  
